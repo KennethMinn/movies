@@ -27,7 +27,7 @@ const App = () => {
     fetchData();
   }, []);
 
-  return <div>App</div>;
+  return <div>App added new update to this line of code</div>;
 };
 
 export default App;
