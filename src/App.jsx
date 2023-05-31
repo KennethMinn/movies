@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   useEffect(() => {
@@ -18,7 +19,7 @@ const App = () => {
           options
         );
         const data = await response.json();
-        console.log(data);
+        console.log(data.results);
       } catch (error) {
         console.error(error);
       }
@@ -27,7 +28,11 @@ const App = () => {
     fetchData();
   }, []);
 
-  return <div>App added new update to this line of code</div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 };
 
 export default App;
